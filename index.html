@@ -95,6 +95,7 @@ html,body{margin:0;height:100%;background:#1b0d3a;overflow:hidden;overscroll-beh
 
 </style>
 <!-- nkw-ikkaku --><style>.nkw-ikk{display:inline-block;box-sizing:border-box;max-width:92vw;padding:5px 14px;border-radius:999px;background:rgba(255,255,255,.92);border:1px solid rgba(60,90,120,.35);color:#3c5a78;font:500 12.5px/1.4 "Hiragino Sans","Noto Sans JP",system-ui,sans-serif;text-decoration:none;white-space:nowrap;letter-spacing:.02em}#card .nkw-ikk{margin-top:12px}</style>
+<style>/* nkw-info：説明ページへのリンク */.nkw-info{display:inline-block;margin-left:.8em;padding:6px 2px;color:inherit;text-decoration:underline;text-underline-offset:2px;pointer-events:auto;letter-spacing:.06em;-webkit-user-select:none;user-select:none}</style>
 </head>
 <body>
 <!-- ▼広告バナーの場所（画面のいちばん下の帯）
@@ -102,18 +103,7 @@ html,body{margin:0;height:100%;background:#1b0d3a;overflow:hidden;overscroll-beh
      ・広告が出ない時も、この帯の高さは そのまま残ります（ゲームの位置は ずれません）
      ・ゲームの操作は、この帯の上では反応しません -->
 <div id="ad-zone">
-  <div id="ad-banner">
-    <!-- ↓↓↓ AdSense の広告ユニットのコード（全ゲーム共通「ゲーム用バナー」・固定サイズ 320×50）↓↓↓ -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2073267239630350"
-         crossorigin="anonymous"></script>
-    <ins class="adsbygoogle"
-         style="display:inline-block;width:320px;height:50px"
-         data-ad-client="ca-pub-2073267239630350"
-         data-ad-slot="6261635446"></ins>
-    <script>
-         (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    <!-- ↑↑↑ ここまで ↑↑↑ -->
+  <div id="ad-banner"><!-- 広告は一時停止中：AdSenseのサイト審査が通るまで、ゲーム画面では広告を読み込みません（帯と余白はそのまま）。審査後にこの変更を元に戻します -->
   </div>
 </div>
 <div id="app">
@@ -138,7 +128,7 @@ html,body{margin:0;height:100%;background:#1b0d3a;overflow:hidden;overscroll-beh
       </div>
       <button id="go" class="btn">はじめる</button>
       <div id="best0"></div>
-      <div class="cr">N.K. Works</div>
+      <div class="cr">N.K. Works<a class="nkw-info" href="/games/watashi-ga-storm/">遊び方・ほかのゲーム ›</a></div>
     </div>
     <div id="result" class="ov hide">
       <div id="card">
